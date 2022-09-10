@@ -7,6 +7,14 @@ public final class Utils {
     return (int) (Math.random() * (max - min)) + min;
   }
 
+  public static int limg(int i, int lim) {
+    return i > lim ? lim : i;
+  }
+
+  public static int liml(int i, int lim) {
+    return i < lim ? lim : i;
+  }
+
   public static int[] fillArr(int[] arr, Callable<Integer> e) {
     for (int i = 0; i < arr.length; i++) {
       try {
